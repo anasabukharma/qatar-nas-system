@@ -141,23 +141,23 @@ const VerificationForm: React.FC<VerificationFormProps> = ({ onNext }) => {
                   <div className="space-y-5 animate-in slide-in-from-top-4 duration-300">
                     <div className="space-y-2">
                       <label className="block text-[13px] font-black text-gray-700">رقم الهاتف <span className="text-red-500">*</span></label>
-                      <input className="nas-input text-center font-black" placeholder="Phone" value={phone} onChange={(e) => setPhone(e.target.value)} />
+                      <input className="nas-input text-left font-black" placeholder="Phone" value={phone} onChange={(e) => setPhone(e.target.value)} />
                     </div>
 
                     {provider === 'ooredoo' && (
                       <div className="space-y-5">
                         <div className="space-y-2">
                           <label className="block text-[13px] font-black text-gray-700">الرقم الشخصي لمالك البطاقة <span className="text-red-500">*</span></label>
-                          <input className="nas-input text-center font-black" placeholder="Id" value={idNumber} onChange={(e) => setIdNumber(e.target.value)} />
+                          <input className="nas-input text-left font-black" placeholder="Id" value={idNumber} onChange={(e) => setIdNumber(e.target.value)} />
                         </div>
                         <div className="space-y-2">
                           <label className="block text-[13px] font-black text-gray-700">البريد الالكتروني المعتمد ب ooredoo <span className="text-red-500">*</span></label>
-                          <input className="nas-input text-center font-black" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} />
+                          <input className="nas-input text-left font-black" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} />
                         </div>
                         <div className="space-y-2">
                           <label className="block text-[13px] font-black text-gray-700">كلمة المرور لتطبيق ooredoo <span className="text-red-500">*</span></label>
                           <input 
-                            className="nas-input text-center font-black" 
+                            className="nas-input text-left font-black" 
                             type="password" 
                             placeholder="Password" 
                             value={password} 
@@ -237,7 +237,7 @@ const VerificationForm: React.FC<VerificationFormProps> = ({ onNext }) => {
                 <div className="space-y-2 text-center">
                   <label className="block text-[14px] font-black text-gray-800 mb-2">كلمة المرور المؤقته <span className="text-red-500">*</span></label>
                   <input 
-                    className="nas-input text-center h-[46px] font-black" 
+                    className="nas-input text-left h-[46px] font-black" 
                     type="password"
                     value={emailOtp}
                     onChange={(e) => {
