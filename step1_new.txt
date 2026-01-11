@@ -1,0 +1,18 @@
+Step 1 - New Design:
+
+Account Type Selection with Fields:
+
+1. Radio buttons for account type
+2. If "citizen/resident" selected:
+   - ID Number field (رقم البطاقة الشخصية/رقم الإقامة)
+   - Email field (البريد الإلكتروني)
+   - Mobile Number field (رقم الهاتف المحمول)
+
+3. If "visitor" selected:
+   - Email field (البريد الإلكتروني)
+   - Mobile Number field (رقم الهاتف المحمول) with international format
+
+Fields to remove from Step 2:
+- ID Number
+- Email
+- Mobile Number
